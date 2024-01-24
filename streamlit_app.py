@@ -37,6 +37,7 @@ try :
 #streamlit.error()
 
 def get_fruit_load_list() :
+
     with my_cnx.cursor() as my my_cur:
     my_cur.execute("select * from fruit_load_list")
     return my_cur.fetchall()
